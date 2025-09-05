@@ -24,7 +24,7 @@ class EmailNotification extends Notifiable {
 
 class SMSNotification extends Notifiable {
   send(user, message) {
-    console.log(`SMS sent to ${user.phone}: ${message}`);
+    console.log(`SMS sent to ${user.phone}: ${message}`);  //loads result first
   }
 }
 
@@ -61,3 +61,5 @@ class PushNotification extends Notifiable {
 
 const pushService = new UserService(new PushNotification());
 pushService.notify(user, "Welcome via Push Notification!");
+
+

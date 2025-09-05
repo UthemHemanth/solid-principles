@@ -24,7 +24,7 @@ class EmailNotification extends Notifiable {
 
 class SMSNotification extends Notifiable {
   send(user, message) {
-    console.log(`SMS sent to ${user.phone}: ${message}`);  //loads result first
+    console.log(`SMS sent to ${user.phone}: ${message}`);  //loads result first bbbb
   }
 }
 
